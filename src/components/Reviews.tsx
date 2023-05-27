@@ -76,7 +76,7 @@ const Reviews: React.FC = () => {
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.requests} className="border">
-              <SwiperSlide className="font-montserrat md:p-5 p-3 shadow-xl rounded-3xl md:h-96 h-80 flex flex-col justify-between">
+              <SwiperSlide className="font-montserrat md:p-5 p-5 shadow-xl rounded-3xl md:h-96 h-80 flex flex-col justify-between">
                 <div className="">
                   <div className="flex flex-col justify-center items-center">
                     <Image
