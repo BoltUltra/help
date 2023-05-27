@@ -46,9 +46,9 @@ const Faq: React.FC = () => {
       <div>
         <div className="grid md:grid-cols-2 md:gap-x-10 md:gap-y-5">
           {faqs.map((faq, index) => (
-            <div>
+            <div key={faq.question}>
               <div>
-                <div key={index} className="shadow p-3 rounded-xl">
+                <div className="shadow p-3 rounded-xl">
                   <Disclosure>
                     {({ open }) => (
                       <>
