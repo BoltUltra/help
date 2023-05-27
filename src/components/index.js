@@ -5,3 +5,5 @@ export { default as PopularServices } from "./PopularServices";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as OurApp } from "./OurApp";
 export { default as DownloadButtons } from "./DownloadButtons";
+export { default as FAQ } from "./FAQ";
+export { default as ContactUs } from "./ContactUs";
