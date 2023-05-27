@@ -20,10 +20,10 @@ const Navbar: React.FC = () => {
   };
   return (
     <>
-      <nav className="">
-        <div className="flex items-center md:px-32 md:space-x-44 py-7 px-5">
+      <nav className="fixed top-0 z-10 w-full bg-white">
+        <div className="flex items-center lg:ml-20 md:ml-10 ml-5 lg:space-x-44 space-x-32 md:py-7 py-5">
           <Image src={logo} alt={"logo"} className="w-20" />
-          <ul className="md:flex items-center justify-between space-x-10 font-montserrat hidden">
+          <ul className="md:flex items-center justify-between lg:space-x-10 md:space-x-7 font-montserrat hidden">
             {navItems.map((item) => (
               <li key={item.title}>
                 <Link href={item.link}>{item.title}</Link>
@@ -33,13 +33,13 @@ const Navbar: React.FC = () => {
         </div>
 
         <button
-          className="md:hidden fixed top-20 right-0 z-20 text-white"
+          className="md:hidden fixed top-5 right-5 z-20 text-white"
           onClick={toggle}
         >
           {isNavOpen ? (
-            <MdClose className="text-4xl bg-primary rounded-l dark:text-white p-1" />
+            <MdClose className="text-4xl bg-primary rounded dark:text-white p-1" />
           ) : (
-            <MdOutlineMenuOpen className="text-4xl p-1 bg-primary rounded-l dark:text-white" />
+            <MdOutlineMenuOpen className="text-4xl p-1 bg-primary rounded dark:text-white" />
           )}
         </button>
 

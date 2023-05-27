@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { angel1, angel2, angel3, apple, google, heroImg } from "../../public";
-import Link from "next/link";
+import { angel1, angel2, angel3, heroImg } from "../../public";
 import { DownloadButtons } from "@/components/index";
 
 const Hero: React.FC = () => {
@@ -52,12 +51,20 @@ const Hero: React.FC = () => {
       date: "Apr 24",
       time: "12:30pm",
       rate: "$44.39/hr",
+      img: angel2,
+    },
+    {
+      name: "Angel R.",
+      role: "Furniture Assembly",
+      date: "Apr 24",
+      time: "12:30pm",
+      rate: "$44.39/hr",
       img: angel3,
     },
   ];
   return (
-    <section className="hero section-spacing grid md:grid-cols-7 md:gap-5 gap-10 items-center">
-      <div className="md:col-span-3 md:text-left text-center">
+    <section className="hero section-spacing grid lg:grid-cols-7 md:gap-5 gap-10 items-center mt-20">
+      <div className="lg:col-span-3 md:text-left text-center">
         <h1 className="font-raleway md:text-6xl text-4xl font-bold md:pb-3 pb-2">
           Revolutionizing Everyday Work
         </h1>

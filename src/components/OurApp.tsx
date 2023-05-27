@@ -7,12 +7,12 @@ const OurApp: React.FC = () => {
   return (
     <section className="section-spacing2">
       <SectionHeading subHeading={"Join Us"} heading={"Our App"} />
-      <div className="grid md:grid-cols-2 md:gap-20 gap-10 items-center">
+      <div className="grid lg:grid-cols-2 lg:gap-20 gap-10 items-center">
         <div>
           <Image src={app} alt={"Our App"} />
         </div>
-        <div className="md:text-left text-center space-y-3">
-          <h3 className="font-raleway md:text-7xl text-4xl font-bold">
+        <div className="lg:text-left text-center space-y-3">
+          <h3 className="font-raleway lg:text-7xl text-4xl font-bold">
             Download Our App Now
           </h3>
           <div className="space-y-2 text-gray-700 font-montserrat">

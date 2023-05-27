@@ -2,6 +2,7 @@
 import {
   ContactUs,
   FAQ,
+  Footer,
   Hero,
   Navbar,
   OurApp,
@@ -19,6 +20,7 @@ export default function Home() {
       <FAQ />
       <ContactUs />
       <Reviews />
+      <Footer />
     </main>
   );
 }

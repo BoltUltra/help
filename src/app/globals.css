@@ -21,7 +21,7 @@
 }
 
 .section-spacing{
-  @apply md:px-20 px-5 md:py-20 py-10;
+  @apply md:px-20 px-5 lg:py-20 py-5;
 }
 .section-spacing2{
   @apply md:px-20 px-5 md:pb-20 pb-14;

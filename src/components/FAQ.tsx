@@ -38,7 +38,7 @@ const Faq: React.FC = () => {
     },
   ];
   return (
-    <section className="section-spacing2 md:mx-32">
+    <section className="section-spacing2 lg:mx-32">
       <SectionHeading
         subHeading={"Question"}
         heading={"Frequently Asked Questions"}

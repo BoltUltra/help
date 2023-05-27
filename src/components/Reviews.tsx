@@ -63,7 +63,7 @@ const Reviews: React.FC = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             1024: {
@@ -72,38 +72,40 @@ const Reviews: React.FC = () => {
             },
           }}
           modules={[Pagination]}
-          className="mySwiper font-montserrat py-10"
+          className="mySwiper font-montserrat py-20"
         >
           {testimonials.map((testimonial) => (
-            <div key={testimonial.requests} className="border">
-              <SwiperSlide className="font-montserrat md:p-5 p-5 shadow-xl rounded-3xl md:h-96 h-80 flex flex-col justify-between">
-                <div className="">
-                  <div className="flex flex-col justify-center items-center">
-                    <Image
-                      src={testimonial.img}
-                      alt={testimonial.feedback}
-                      className="w-14 h-14 rounded-full object-cover"
-                    />
-                    <h4 className="font-montserrat font-semibold text-sm">
-                      {testimonial.name}
-                    </h4>
-                    <p className="flex space-x-1">
-                      <AiFillStar className="text-yellow-400" />
-                      <AiFillStar className="text-yellow-400" />
-                      <AiFillStar className="text-yellow-400" />
-                      <AiFillStar className="text-yellow-400" />
-                      <AiFillStar className="text-yellow-400" />
-                    </p>
+            <div key={testimonial.requests} className="">
+              <SwiperSlide>
+                <div className="font-montserrat p-5 h-96 shadow-xl rounded-3xl border flex flex-col justify-between mb-10">
+                  <div className="">
+                    <div className="flex flex-col justify-center items-center">
+                      <Image
+                        src={testimonial.img}
+                        alt={testimonial.feedback}
+                        className="w-14 h-14 rounded-full object-cover"
+                      />
+                      <h4 className="font-montserrat font-semibold text-sm">
+                        {testimonial.name}
+                      </h4>
+                      <p className="flex space-x-1">
+                        <AiFillStar className="text-yellow-400" />
+                        <AiFillStar className="text-yellow-400" />
+                        <AiFillStar className="text-yellow-400" />
+                        <AiFillStar className="text-yellow-400" />
+                        <AiFillStar className="text-yellow-400" />
+                      </p>
+                    </div>
+                    <div className="py-5">
+                      <p className="text-sm">
+                        &quot;{testimonial.feedback}&quot;
+                      </p>
+                    </div>
                   </div>
-                  <div className="py-5">
-                    <p className="text-sm">
-                      &quot;{testimonial.feedback}&quot;
-                    </p>
-                  </div>
+                  <p className="text-right text-sm font-semibold">
+                    {testimonial.date}
+                  </p>
                 </div>
-                <p className="text-right text-sm font-semibold">
-                  {testimonial.date}
-                </p>
               </SwiperSlide>
             </div>
           ))}

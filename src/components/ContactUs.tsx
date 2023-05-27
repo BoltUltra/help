@@ -9,11 +9,11 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const ContactUs: React.FC = () => {
   return (
-    <section className="section-spacing2 md:mx-32">
+    <section className="section-spacing2 lg:mx-32">
       <SectionHeading subHeading={"Contacts"} heading={"Contact Us"} />
 
       <div className="md:px-10 sm:px-3 py-10 rounded-xl shadow-lg">
-        <div className="grid md:grid-cols-2 md:gap-10 gap-10 md:px-0 px-3">
+        <div className="grid lg:grid-cols-2 gap-10 lg:px-0 md:px-5 px-3">
           <div>
             <div className="relative">
               <div className="absolute left-[20%] top-[25%] w-[70%] mx-auto h-[70%] bg-primary rounded-full"></div>

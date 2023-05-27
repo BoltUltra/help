@@ -55,6 +55,9 @@ const PopularServices: React.FC = () => {
   return (
     <section className="section-spacing2 text-center">
       <SectionHeading heading={"Popular Services"} subHeading={"Popular"} />
+      <p className="text-right font-montserrat text-gray-600 text-xs py-2">
+        {services.length} options
+      </p>
       <div>
         <Swiper
           slidesPerView={1}
@@ -65,7 +68,7 @@ const PopularServices: React.FC = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             1024: {

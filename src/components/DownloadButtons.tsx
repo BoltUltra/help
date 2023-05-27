@@ -5,7 +5,7 @@ import { apple, google } from "../../public";
 
 const DownloadButtons: React.FC = () => {
   return (
-    <div className="flex items-center md:justify-start justify-center space-x-5 mb-5">
+    <div className="flex items-center lg:justify-start justify-center space-x-5 mb-5">
       <Link href={"/"}>
         <Image
           src={apple}
