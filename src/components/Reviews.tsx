@@ -96,7 +96,9 @@ const Reviews: React.FC = () => {
                     </p>
                   </div>
                   <div className="py-5">
-                    <p className="text-sm">"{testimonial.feedback}"</p>
+                    <p className="text-sm">
+                      &quot;{testimonial.feedback}&quot;
+                    </p>
                   </div>
                 </div>
                 <p className="text-right text-sm font-semibold">
