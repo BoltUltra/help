@@ -23,8 +23,8 @@ const ContactUs: React.FC = () => {
                 className="mx-auto grayscale"
               />
             </div>
-            <div className="flex items-center justify-around font-montserrat pt-5">
-              <div className="flex md:flex-row flex-col md:space-x-2 md:space-y-0 space-y-3">
+            <div className="flex md:flex-row flex-col items-center md:justify-around font-montserrat pt-5 md:space-y-0 space-y-3">
+              <div className="flex space-x-2">
                 <BsTelephone className="text-2xl" />
                 <p className="flex flex-col">
                   <span className="font-bold">Call us</span>
