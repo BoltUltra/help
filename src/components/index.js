@@ -7,3 +7,4 @@ export { default as OurApp } from "./OurApp";
 export { default as DownloadButtons } from "./DownloadButtons";
 export { default as FAQ } from "./FAQ";
 export { default as ContactUs } from "./ContactUs";
+export { default as Reviews } from "./Reviews";

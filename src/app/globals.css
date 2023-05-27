@@ -27,3 +27,17 @@
   @apply md:px-20 px-5 md:pb-20 pb-14;
 }
 
+.swiperWrapper {
+  @apply py-20;
+}
+
+.swiper-pagination-bullet {
+  background: transparent !important;
+  border: 1px solid #2B4E8C !important;
+}
+
+.swiper-pagination-bullet-active {
+  border: none !important;
+  background: #03C3DE !important;
+}
+

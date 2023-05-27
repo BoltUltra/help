@@ -44,7 +44,7 @@ const Faq: React.FC = () => {
         heading={"Frequently Asked Questions"}
       />
       <div>
-        <div className="grid md:grid-cols-2 md:gap-x-10 md:gap-y-5">
+        <div className="grid md:grid-cols-2 md:gap-x-10 md:gap-y-5 gap-5">
           {faqs.map((faq, index) => (
             <div key={faq.question}>
               <div>
@@ -52,7 +52,7 @@ const Faq: React.FC = () => {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="py-2 flex w-full items-center justify-between">
+                        <Disclosure.Button className="py-2 flex w-full items-center justify-between text-left">
                           <span>{faq.question}</span>
                           <ChevronRightIcon
                             className={`${

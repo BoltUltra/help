@@ -6,6 +6,7 @@ import {
   Navbar,
   OurApp,
   PopularServices,
+  Reviews,
 } from "@/components";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <OurApp />
       <FAQ />
       <ContactUs />
+      <Reviews />
     </main>
   );
 }
